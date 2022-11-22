@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Buzzed | Inscripciones</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <img src="./imgs/menu.png" alt="" id="menu">
-        </label>
-        <div class="nav-menu">
-            <ul>
-                <li>
-                    <a href="./index.html" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="#">Inscripciones</a>
-                </li>
-                <li>
-                    <a href="./cursos.html">Cursos</a>
-                </li>
-                <li>
-                    <a href="">Masterclass</a>
-                </li>
-                <li>
-                    <a href="">Comunidad</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./login.html">Login</a>
-                </li>
-            </ul>
-        </div>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <img src="imgs/menu.svg" alt="vectores menu" id="menu" />
+      </label>
+      <div class="nav-menu">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#" class="active">Inscripciones</a>
+          </li>
+          <li>
+            <a href="cursos.html">Cursos</a>
+          </li>
+          <li>
+            <a href="pagina-desarrollo.html">Masterclass</a>
+          </li>
+          <li>
+            <a href="beneficios.html">Comunidad</a>
+          </li>
+          <li>
+            <a href="nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="login.html">Iniciar Sesion</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="hero-inscripciones">
-        <h3>¡Estas cada vez más cerca de sumarte a Buzzed! 🚀</h3>
-        <p>Completa los campos requeridos para finalizar tu inscripción</p>
+      <h3>¡Estas cada vez más cerca de sumarte a Buzzed! 🚀</h3>
+      <p>Completá los campos requeridos para finalizar tu inscripción</p>
     </section>
-    <form action="" id="inscripciones">
-        <label for="">
-            <p>Nombre</p>
-            <input type="text" name="" id="" placeholder="John" title="">
-        </label>
-        <label for="">
-            <p>Apellido</p>
-            <input type="text" name="" id="" placeholder="Doe" title="">
-        </label>
-        <label for="">
-            <p>Mail</p>
-            <input type="text" name="" id="" placeholder="johndoe@gmail.com" title="">
-        </label>
-        <label for="">
-            <p>Confirma tu Mail</p>
-            <input type="text" name="" id="" placeholder="Repetí tu mail" title="">
-        </label>
-        <label for="">
-            <p>Telefono</p>
-            <input type="number" name="" id="" placeholder="+54" title="">
-        </label>
-        <label for="">
-            <p>DNI</p>
-            <input type="number" name="" id="" placeholder="Ingresa tu DNI" title="">
-        </label>
-        <label for="" id="form-check">
-            <input type="checkbox" name="" id="">
-            <p>Acepto los Términos y Condiciones</p>
-        </label>
-        <a href="./index.html" id="form-btn">Inscribirme</a>
+    <form action="/base-de-datos" method="post" class="formulario">
+      <label for="curso-elegido">Elegí el curso que quieras hacer</label>
+      <input type="text" name="curso" placeholder="Escribi tu curso" id="curso-elegido"/>
+      <label for="name">Nombre</label>
+      <input type="text" name="name" placeholder="John" id="name"/>
+      <label for="surname">Apellido</label>
+      <input type="text" name="surname" placeholder="Doe" id="surname"/>
+      <label for="e-mail">Mail</label>
+      <input type="email" name="email" placeholder="Ingresa tu e-mail" id="e-mail"/>
+      <label for="e-mail-2">Confirmá tu mail</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Ingresa nuevamente tu e-mail"
+        id="e-mail-2"
+      />
+      <label for="phone">Teléfono</label>
+      <input type="number" name="phone" placeholder="Ingresa tu telefono" />
+      <label for="document">DNI</label>
+      <input type="number" name="dni" placeholder="Ingresa tu DNI"  id="document"/>
+      <div id="form-check">
+        <label for="check">Aceptá los terminos y condiciones</label>
+        <input type="checkbox" name="check" />
+      </div>
+      <button type="submit" href="#" class="form-btn">Inscribite</button>
     </form>
     <footer>
-        <img src="./imgs/social.svg" alt="" id="social-media">
-        <img src="./imgs/lineas-footer.svg" alt="">
-        <img src="./imgs/logo-azul.svg" alt="" id="logo-footer">
-        <p>Buzzed © 2022 - Todos los derechos reservados</p>
+      <div id="redes">
+        <a href="https://www.instagram.com/"
+          ><img src="imgs/instagram.svg" alt="instagram"
+        /></a>
+        <a href="https://twitter.com/home"
+          ><img src="imgs/twitter.svg" alt="twitter"
+        /></a>
+        <a href="https://www.tiktok.com/es/"
+          ><img src="imgs/tiktok.svg" alt="tiktok"
+        /></a>
+      </div>
+      <img src="imgs/logo-azul.svg" alt="" id="logo-footer" />
+      <p>Buzzed © 2022 - Todos los derechos reservados</p>
     </footer>
-</body>
-
+  </body>
 </html>

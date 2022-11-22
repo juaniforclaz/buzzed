@@ -2,63 +2,69 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Buzzed | Login</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Buzzed | Login</title>
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <img src="./imgs/menu.png" alt="" id="menu">
-        </label>
-        <div class="nav-menu">
-            <ul>
-                <li>
-                    <a href="./index.html" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="./inscripciones.html">Inscripciones</a>
-                </li>
-                <li>
-                    <a href="./cursos.html">Cursos</a>
-                </li>
-                <li>
-                    <a href="">Masterclass</a>
-                </li>
-                <li>
-                    <a href="">Comunidad</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="#">Login</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <form action="" id="login-form">
-        <h2>Inicia Sesión</h2>
-        <label for="usuario">Usuario</label>
-        <input type="text" name="usuario" required>
-        <label for="contraseña">Contraseña</label>
-        <input type="password" name="contraseña" required>
-        <a href="">Ingresar</a>
-    </form>
-    <div class="login">
-        <p>No tenes cuenta? <a href="">Registrate acá</a></p>
-        <p>Problemas para iniciar sesión? <a href="">Contacta con nosotros</a></p>
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <img src="imgs/menu.svg" alt="" id="menu" />
+    </label>
+    <div class="nav-menu">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="inscripciones.html">Inscripciones</a>
+        </li>
+        <li>
+          <a href="cursos.html">Cursos</a>
+        </li>
+        <li>
+          <a href="pagina-desarrollo.html">Masterclass</a>
+        </li>
+        <li>
+          <a href="beneficios.html">Comunidad</a>
+        </li>
+        <li>
+          <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li>
+          <a href="#" class="active">Iniciar Sesion</a>
+        </li>
+      </ul>
     </div>
-    <footer>
-        <img src="./imgs/social.svg" alt="" id="social-media">
-        <img src="./imgs/lineas-footer.svg" alt="">
-        <img src="./imgs/logo-azul.svg" alt="" id="logo-footer">
-        <p>Buzzed © 2022 - Todos los derechos reservados</p>
-    </footer>
+  </nav>
+  <main id="main-login">
+    <h2>¡Inicia sesión y comenzá el reccorido! 🚀</h2>
+    <p>Todos tus cursos y materiales en una sola plataforma</p>
+  </main>
+  <form action="/base-de-datos" method="post" class="formulario">
+    <label for="mail">Mail</label>
+    <input type="text" name="mail" required placeholder="Ingresa tu e-mail" />
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" required placeholder="Ingresa tu contraseña" />
+    <a href="index.html" class="form-btn">Iniciar sesión</a>
+  </form>
+  <div class="login">
+    <p>No tenes cuenta? <a href="registro.html">Registrate acá</a></p>
+    <p>Problemas para iniciar sesión? <a href="">Contactá con nosotros</a></p>
+  </div>
+  <footer>
+    <div id="redes">
+      <a href="https://www.instagram.com/"><img src="imgs/instagram.svg" alt="instagram" /></a>
+      <a href="https://twitter.com/home"><img src="imgs/twitter.svg" alt="twitter" /></a>
+      <a href="https://www.tiktok.com/es/"><img src="imgs/tiktok.svg" alt="tiktok" /></a>
+    </div>
+    <img src="imgs/logo-azul.svg" alt="logo footer" id="logo-footer" />
+    <p>Buzzed © 2022 - Todos los derechos reservados</p>
+  </footer>
 </body>
 
 </html>
